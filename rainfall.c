@@ -9,7 +9,6 @@ int main(void) {
   int nd2[13] = {0,31,29,31,30,31,30,31,31,30,31,30,31};
   year = 2013;
   printf("Year = %d", year);
-  ///Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.grd
   fptr1 = fopen("/Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.grd", "rb"); // input file
   fptr2 = fopen("/Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.txt", "w");
   if (fptr1 == NULL) {

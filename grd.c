@@ -9,14 +9,15 @@ int main(void) {
   int nd2[13] = {0,31,29,31,30,31,30,31,31,30,31,30,31};
   year = 2013;
   printf("Year = %d", year);
-  fptr1 = fopen("/Users/anishkumar/Desktop/grd/Rainfall_ind2021_rfp25.grd", "rb"); // input file
-  fptr2 = fopen("/Users/anishkumar/Desktop/grd/Rainfall_ind2021_rfp25.grd", "w");
+  ///Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.grd
+  fptr1 = fopen("/Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.grd", "rb"); // input file
+  fptr2 = fopen("/Users/anishkumar/Downloads/Rainfall_ind2013_rfp25.txt", "w");
   if (fptr1 == NULL) {
     printf("Can't open file");
     return 0;
   }
   if (fptr2 == NULL) {
-    printf("Can't open file");
+    printf("Can't open fptr2 file");
     return 0;
   }
   for (j = 0; j < 135; j++) lo[j] = 66.5 + j * 0.25;

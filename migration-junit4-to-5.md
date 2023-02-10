@@ -1,49 +1,49 @@
-#Migration Junit-4 to Junit-5
+## Migration Junit-4 to Junit-5
 
 ## Difference between Junit4/5
 1. **Junit 4: Single bundled jar**
 
 2. **Junit 5: It consists of platform, jupiter and vintage library**
 
-    **Architecture -**
+    ### **Architecture -**
     
-    - Basic: ![Basic design](images/junit5-architecture-basic.png)
+      ![Basic design](images/junit5-architecture-basic.png)
 
-    - Detailed: ![Detailed design](images/junit5-architecture-detailed.png)
+    **`Junit Platform -`** which serves as a foundation for launching testing frameworks on the JVM (Java Virtual Machine), also provides an API to launch tests from either the console, IDEs, or build tools.
 
-    **Junit Platform -** which serves as a foundation for launching testing frameworks on the JVM (Java Virtual Machine), also provides an API to launch tests from either the console, IDEs, or build tools.
+    - **`junit-platform-commons -`** an internal common library of JUnit, intended solely for usage within the JUnit framework itself. Any usage by external parties isn’t supported.
 
-    1. **`junit-platform-commons -`** an internal common library of JUnit, intended solely for usage within the JUnit framework itself. Any usage by external parties isn’t supported.
+    -  **`junit-platform-console -`** which provides support for discovering and executing tests on the JUnit Platform from the console.
 
-    2.  **`junit-platform-console -`** which provides support for discovering and executing tests on the JUnit Platform from the console.
+    - **`junit-platform-console-standalone -`** an executable JAR with all dependencies included. It’s used by Console Launcher, a command-line Java application that lets you launch the JUnit Platform from the console. For example, it can be used to run JUnit Vintage and JUnit Jupiter tests and print test execution results to the console.
 
-    3. **`junit-platform-console-standalone -`** an executable JAR with all dependencies included. It’s used by Console Launcher, a command-line Java application that lets you launch the JUnit Platform from the console. For example, it can be used to run JUnit Vintage and JUnit Jupiter tests and print test execution results to the console.
+    - **`junit-platform-engine -`** a public API for test engines.
 
-    4. **`junit-platform-engine -`** a public API for test engines.
+    - **`junit-platform-launcher -`** a public API for configuring and launching test plans, typically used by IDEs and build tools.
 
-    5. **`junit-platform-launcher -`** a public API for configuring and launching test plans, typically used by IDEs and build tools.
+    - **`junit-platform-runner -`** a runner for executing tests and test suites on the JUnit Platform in a JUnit 4 environment.
 
-    6. **`junit-platform-runner -`** a runner for executing tests and test suites on the JUnit Platform in a JUnit 4 environment.
+    - **`junit-platform-suite-api -`** which contains the annotations for configuring test suites on the JUnit Platform.
 
-    7. **`junit-platform-suite-api -`** which contains the annotations for configuring test suites on the JUnit Platform.
+    - **`junit-platform-surefire-provider -`** which provides support for discovering and executing tests on the JUnit Platform using Maven Surefire.
 
-    8. **`junit-platform-surefire-provider -`** which provides support for discovering and executing tests on the JUnit Platform using Maven Surefire.
-
-    9. **`junit-platform-gradle-plugin -`** which provides support for discovering and executing tests on the JUnit Platform using Gradle.
+    - **`junit-platform-gradle-plugin -`** which provides support for discovering and executing tests on the JUnit Platform using Gradle.
 
 
-    **Junit Jupiter -** combination of the new programming model and extension model for writing tests and extensions.
+    **`Junit Jupiter -`** combination of the new programming model and extension model for writing tests and extensions.
 
-    1. **`junit-jupiter-api -`** the JUnit Jupiter API for writing tests and extensions.
+    - **`junit-jupiter-api -`** the JUnit Jupiter API for writing tests and extensions.
 
-    2. **`junit-jupiter-engine -`** the JUnit Jupiter test engine implementation, only required at runtime.
+    - **`junit-jupiter-engine -`** the JUnit Jupiter test engine implementation, only required at runtime.
 
-    3. **`junit-jupiter-params -`** which provides support for parameterized tests in JUnit Jupiter.
+    - **`junit-jupiter-params -`** which provides support for parameterized tests in JUnit Jupiter.
 
-    4. **`junit-jupiter-migrationsupport -`** which provides migration support from JUnit 4 to JUnit Jupiter, and it’s required only for running selected JUnit 4 rules.
+    - **`junit-jupiter-migrationsupport -`** which provides migration support from JUnit 4 to JUnit Jupiter, and it’s required only for running selected JUnit 4 rules.
 
-    **Junit Vintage-** a test engine for running JUnit 3 and JUnit 4 based tests on the platform, ensuring the necessary backwards compatibility.
+    **`Junit Vintage -`** a test engine for running JUnit 3 and JUnit 4 based tests on the platform, ensuring the necessary backwards compatibility.
 
+    ![Detailed design](images/junit5-architecture-detailed.png)
+    
 ## Mockito version upgrade in the `pom.xml` file for **`Maven build`**
 
 Add junit 5 dependencies and for mocking add mockito-junit-jupiter. In case of mocking **static/final/constructor** then add mockito-inline dependency.

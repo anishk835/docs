@@ -31,6 +31,9 @@
 
    https://www.byteslounge.com/tutorials/how-to-create-a-multiple-module-project-using-maven
 
+# Spring Data and JPA Performance
+1. https://www.youtube.com/watch?v=exqfB1WaqIw&t=1216s
+
 # Fun reading
 - https://github.com/dekuNukem/RGBeeb
 

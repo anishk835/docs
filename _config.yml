@@ -1,0 +1,56 @@
+# GitHub Pages Configuration
+theme: jekyll-theme-cayman
+title: Technical Documentation
+description: A comprehensive collection of development guides, setup instructions, and reference materials
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Git
+    url: /git/
+  - title: Build Tools
+    url: /build-tools/
+  - title: Spring Framework
+    url: /spring-framework/
+  - title: Kubernetes
+    url: /kubernetes/
+  - title: System Admin
+    url: /system-admin/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Show or hide the sidebar
+show_downloads: false
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+# Relative links
+relative_links:
+  enabled: true
+  collections: false
+
+# SEO
+twitter:
+  username: anishk835
+  card: summary
+
+github:
+  repository_url: https://github.com/anishk835/docs
+
+# Exclude from processing
+exclude:
+  - .git
+  - .github
+  - .claude
+  - node_modules
+  - script
+  - docker
+  - draw.io

@@ -13,16 +13,16 @@ A comprehensive collection of development guides, setup instructions, and refere
 
 ## 📑 Table of Contents
 
-- [Version Control](#version-control)
-- [Build Tools](#build-tools)
-- [Java & Spring](#java--spring)
-- [Containerization](#containerization)
-- [Orchestration](#orchestration)
-- [Node.js](#nodejs)
-- [System Administration](#system-administration)
-- [Development Environment](#development-environment)
-- [Scripts & Utilities](#scripts--utilities)
-- [Learning Resources](#learning-resources)
+- [Version Control](#-version-control)
+- [Build Tools](#️-build-tools)
+- [Java & Spring](#-java--spring)
+- [Containerization](#-containerization)
+- [Orchestration](#️-orchestration)
+- [Node.js](#-nodejs)
+- [System Administration](#️-system-administration)
+- [Development Environment](#️-development-environment)
+- [Scripts & Utilities](#-scripts--utilities)
+- [Learning Resources](#-learning-resources)
 
 ---
 

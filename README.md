@@ -1,5 +1,12 @@
 # Technical Documentation Repository
 
+[![Deploy Status](https://github.com/anishk835/docs/workflows/Deploy%20Documentation%20to%20GitHub%20Pages/badge.svg)](https://github.com/anishk835/docs/actions)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?logo=github)](https://anishk835.github.io/docs/)
+[![Markdown](https://img.shields.io/badge/Markdown-Documentation-blue?logo=markdown)](https://github.com/anishk835/docs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/anishk835/docs?style=social)](https://github.com/anishk835/docs/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/anishk835/docs?style=social)](https://github.com/anishk835/docs/network/members)
+
 A comprehensive collection of development guides, setup instructions, and reference materials for software engineering.
 
 **🌐 Live Site:** [https://anishk835.github.io/docs/](https://anishk835.github.io/docs/)
